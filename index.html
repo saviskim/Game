@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадай</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row game-card align-items-center">
+            <div class="col col-md-4 offset-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <p class="m-0 collapse game">Вопрос №<span id="orderNumberField"></span></p>
+                    </div>
+                    <div class="card-body collapse game">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <h3 class="card-title m-0"><span id="answerField">Вы загадали число ?</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body collapse game">
+                        <div class="btn-group">
+                            <button class="btn btn-warning" id="btnLess">&#129047;<br>Меньше</button>
+                            <button class="btn btn-primary btn-lg" id="btnEqual">Верно!</button>
+                            <button class="btn btn-warning" id="btnOver">Больше<br>&#129045;</button>
+                        </div>
+                    </div>
+
+                    <div class="card-start start">
+                        <label for="min">Минимальное число</label>
+                        <input type="text" id="min">
+                        <label for="max">Максимальное число</label>
+                        <input type="text" id="max">
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-3 LabelMin"></div>
+                            <div class="col-6">
+                            <button class="btn btn-dark collapse game" id="btnRetry">Заново</button>
+                            <button class="btn btn-success start" id="btnStart">Начать</button>
+                        </div>
+                        <div class="col-3 LabelMax"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

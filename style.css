@@ -1,0 +1,31 @@
+
+.game-card {
+    height: 100vh;
+    font-family: 'Itim', cursive;
+}
+
+.card-start{
+    padding: 10px;
+}
+
+.LabelMin{
+    color: white;
+}
+
+.LabelMax{
+    color: white;
+}
+
+.LabelMin, .LabelMax{
+    font-size: 24px;
+    text-align: center;
+}
+
+.card{
+    transition: 0.5s;
+    background-color: rgb(178 194 190 / 93%);
+}
+
+.scale-0{
+    transform: scale(0);
+}
